@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RoughCode : save your roughwork locally </title>
+    <meta name="description"
+    content="If you're experiencing any issues while doing front-end code, please contact support and we'll get back to you as soon as possible.  ">
+     <meta name="theme-color" content="#131417">
+    <link rel="shortcut icon" href="./image/roughcode.ico" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="./css/save.css">
+    <script src="https://kit.fontawesome.com/261ab8f51f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="notes" id="app">
+        
+        
+    </div>
+
+    
+   
+    
+    <script src="./js/Save.js" type="module"></script>
+
+    <script>
+        function clipboard() {
+            var copyText = document.getElementById("js");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+
+            const oldText = document.getElementById("1").innerHTML;
+            document.getElementById("1").innerHTML = "copied";
+
+            setTimeout(() => {
+
+                document.getElementById("1").innerHTML = "clipboard";
+            }, 3000);
+
+        }
+        function clipboard1() {
+            var copyText = document.getElementById("html");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            const oldText = document.getElementById("3").innerHTML;
+            document.getElementById("3").innerHTML = "copied";
+
+            setTimeout(() => {
+
+                document.getElementById("3").innerHTML = "clipboard";
+            }, 3000);
+
+        }
+        function clipboard2() {
+            var copyText = document.getElementById("css");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+
+            const oldText = document.getElementById("2").innerHTML;
+            document.getElementById("2").innerHTML = "copied";
+
+            setTimeout(() => {
+
+                document.getElementById("2").innerHTML = "clipboard";
+            }, 3000);
+        }
+    </script>
+
+ 
+    
+
+    
+</body>
+</html>
